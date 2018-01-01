@@ -101,7 +101,7 @@ ifeq "$(wildcard $(ARDUINO_BASE_DIR))" ""
 endif
 	
 .build-post: .build-impl
-	echo "${PATH}"
+	#echo "${PATH}"
 	avr-objcopy -O ihex ${CND_ARTIFACT_PATH_${CONF}} ${CND_ARTIFACT_PATH_${CONF}}.hex
 	avr-size --mcu=${ARDUINO_MODEL} -C ${CND_ARTIFACT_PATH_${CONF}}
 
