@@ -18,7 +18,7 @@
 extern "C" {
 #endif
 
-    extern int asdfasdf;
+    extern int asdfasdf_teste;
 
 
 
